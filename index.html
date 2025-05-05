@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>紅樓超算展示頁</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+    }
+    picture, img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <picture>
+    <!-- 手機版圖片：螢幕寬度小於等於 768px 時套用 -->
+    <source media="(max-width: 768px)" srcset="手機版網站@2x-100.jpg">
+    <!-- 預設顯示電腦版圖片 -->
+    <img src="電腦版網頁@2x-100.jpg" alt="紅樓超算網站展示">
+  </picture>
+</body>
+</html>
